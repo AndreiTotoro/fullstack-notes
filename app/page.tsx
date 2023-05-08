@@ -3,7 +3,7 @@ import Link from "next/link"
 import Post from "./interfaces/app_interfaces"
 import PostComponent from "./components/PostComponent"
 
-async function getPosts(){
+async function getPosts(): Promise<Post[]>{
     const data = await fetch("http://localhost:3000/api/get-posts", { cache: 'no-store' })
     return data.json()
 }
