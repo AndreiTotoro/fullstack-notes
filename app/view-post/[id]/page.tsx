@@ -1,5 +1,5 @@
 import Post from '@/app/interfaces/app_interfaces'
-import prisma from '@/prisma/client'
+import {prisma} from '@/prisma/client'
 import Link from 'next/link'
 import React from 'react'
 

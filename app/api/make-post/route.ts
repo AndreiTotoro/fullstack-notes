@@ -1,5 +1,5 @@
 import Post from "@/app/interfaces/app_interfaces";
-import prisma from "@/prisma/client";
+import { prisma } from "@/prisma/client";
 import { NextResponse } from "next/server";
 import { redirect } from 'next/navigation';
 

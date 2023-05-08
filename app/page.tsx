@@ -1,4 +1,4 @@
-import prisma from "@/prisma/client"
+import { prisma } from "@/prisma/client"
 import Link from "next/link"
 import Post from "./interfaces/app_interfaces"
 import PostComponent from "./components/PostComponent"
