@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function PostComponent({ postData }: {postData: Post}) {
   return (
-    <div className="bg-slate-600 rounded-xl w-30 p-4 text-red-500">
+    <div className="bg-slate-600 rounded-xl w-30 p-4 text-slate-300">
             <h1 className="font-bold">{postData.title}</h1>
             <p>{postData.content}</p>
             <p>Id: {postData.id}</p>

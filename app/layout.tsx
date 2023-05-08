@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 export default function RootLayout({children}: {children: ReactNode}) {
     return (
         <html lang="en">
-          <body >
+          <body className="bg-slate-300" >
             <Navbar />
             {children}</body>
         </html>
