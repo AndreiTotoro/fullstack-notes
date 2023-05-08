@@ -3,13 +3,13 @@ import Link from "next/link"
 import Post from "./interfaces/app_interfaces"
 import PostComponent from "./components/PostComponent"
 
-async function getPosts(): Promise<Post[] >{
-    const data = await prisma.post.findMany()
-    return data
+async function getPosts(){
+    const data = await fetch("http://localhost:3000/api/get-posts", { cache: 'no-store' })
+    return data.json()
 }
 
 export default async function Page() {
-  const posts: Post[] = await getPosts()
+  const posts = await getPosts()
   console.log(posts)
   return (
     <div>
